@@ -1,0 +1,30 @@
+<div class="row" style="margin: 0%;"> 
+    <div class="col-lg-3" style="padding: 2em 1em; padding-left:3em; padding-bottom: 1em;">
+        <img style="padding:1em; width:17em; border-radius: 50%;" src="{{ userData?.avatar_url || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnfAxGV-fZxGL9elM_hQ2tp7skLeSwMyUiwo4lMm1zyA&s' }}" alt="image comes here">
+    </div>
+
+    <div class="col-lg-9" style="padding: 2em; padding-bottom:0.2em;">
+        <div style="padding: 1em; padding-bottom: 0.2em;">
+            <h2> <span id="user_name">
+                {{ userData?.name || "John Doe" }}
+            </span></h2>
+            <p><span id="user_bio" style="font-size: 1.2em;">
+                <span style="font-weight:bold;"> Bio: </span> {{ userData?.bio || "I am a github user"}}
+            </span></p>
+            <p style="font-size: 1.2em;">
+               <span style="font-weight:bold;"> Location: </span> {{ userData?.location  || "your location"}}
+            </p>
+            <p><span id="user_social_link" style="font-size: 1.2em;">
+                <span style="font-weight:bold;"> Twitter: </span> {{ userData?.twitter_username || "https://Default link here"}}
+            </span></p>
+        </div>
+    </div>
+</div>
+
+<div id="user_site_link" style="padding: 0em 5em; padding-bottom:1em;" >
+    <a href="{{ userData?.html_url}}" style="text-decoration: none; color:black;"> {{ userData?.html_url || "https://github.com/john_doe" }} </a>
+</div>
+
+
+
+

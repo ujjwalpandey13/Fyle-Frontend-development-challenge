@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 3em; /* Adjust the gap between grid items */
+  }
+  
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 1em;
+    text-align: left;
+    border: 1px solid black;
+  }
+
+  .skills-used{
+    border: 1px solid rgb(60, 128, 177);
+    background-color: rgb(60, 128, 177);
+    padding: 0.1em 1em;
+    display:inline-flex;
+    color:white;
+    
+  }

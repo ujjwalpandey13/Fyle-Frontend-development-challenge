@@ -1,0 +1,79 @@
+<div style="padding: 1em; border-top: 2px solid black;">
+<!-- <h3 style="text-align: center;"> Your repositories!</h3> -->
+<!-- <br> -->
+    <div class="grid-container" style="padding:2em;">
+
+      <div *ngFor="let repository of repositories" class="grid-item">
+          <h4>{{ repository.name }}</h4>
+          <div>{{ repository?.description || "No Description "}}</div>
+          <div style="padding: 0.5em 0em;">
+              <div style="padding: 0.5em 0em; display: inline;">
+                  <div class="skills-used"> {{ repository?.language || "None" }} </div>
+              </div>
+          </div>
+      </div>
+
+    </div><!-- end of the grid-container -->
+
+       
+      <div *ngIf="!(repositories && repositories.length > 0)">
+        
+        <div class="grid-container" style="padding:0em 2em;">
+        
+          <div class="grid-item">
+          <h4>
+            Repository Name 1
+          </h4>
+          <div> Description</div>
+        
+        <div style="padding: 0.5em 0em;">
+          <div style="padding: 0.5em 0em; display: inline;">
+            <div class="skills-used"> hello </div>
+          </div> &nbsp;
+          
+          <div style="padding: 0.5em 0em; display: inline;">
+            <div class="skills-used"> hello </div>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="grid-item">
+          <h4>
+            Repository Name 2
+          </h4>
+          <div> Description</div>
+        
+        <div style="padding: 0.5em 0em;">
+          <div style="padding: 0.5em 0em; display: inline;">
+            <div class="skills-used"> hello </div>
+          </div> &nbsp;
+          
+          <div style="padding: 0.5em 0em; display: inline;">
+            <div class="skills-used"> hello </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+      
+    </div>
+
+</div>
+<!-- outer div finieshed!  -->
+
+<hr>
+<!-- div for pagination started! -->
+<div style="padding: 2em;"> 
+  <div style="text-align: center;">
+    <button class="btn btn-dark">
+      prev
+    </button> &nbsp;
+    <button class="btn btn-dark">
+      next
+    </button>
+  </div>
+</div>
+
+
+
